@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Default suite">
+
+<listeners>
+<listener  class-name="Utility.Transformer"/>
+</listeners>
+
+  
+  
+  <test name="ChromeTest">
+
+    <parameter name="browsername" value="chrome" />
+    <classes>
+      
+      <class name="smp.ParallelBrowsing"/>
+      
+    </classes>
+    </test>
+    
+    <test name="FirefoxTest">
+    
+    <parameter name="browsername" value="Firefox" />
+    
+    <classes>
+      
+      <class name="smp.ParallelBrowsing"/>
+      
+    </classes>
+    
+    
+    
+  </test> <!-- Default test -->
+</suite> <!-- Default suite -->
