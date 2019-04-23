@@ -6,9 +6,9 @@ import org.testng.ITestResult;
 public class RetryAnalyzer implements IRetryAnalyzer {
 
 	
-	//update from officec
+	//update from office
 	int count = 0;
-	int limit = 9;
+	int limit = 10;
 
 	public boolean retry(ITestResult result) {
 
