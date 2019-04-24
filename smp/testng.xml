@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Default suite">
+<suite name="Default suite" parallel = "tests">
 
-<listeners>
-<listener  class-name="Utility.Transformer"/>
-</listeners>
 
   
   
-  <test name="ChromeTest">
+    <test name="ChromeTest">
 
     <parameter name="browsername" value="chrome" />
     <classes>
       
-      <class name="smp.ParallelBrowsing"/>
+      <class name="smp.Test"/>
       
     </classes>
+    
     </test>
     
     <test name="FirefoxTest">
@@ -24,11 +22,11 @@
     
     <classes>
       
-      <class name="smp.ParallelBrowsing"/>
+      <class name="smp.Test"/>
       
     </classes>
     
     
     
-  </test> <!-- Default test -->
+</test> <!-- Default test -->
 </suite> <!-- Default suite -->
