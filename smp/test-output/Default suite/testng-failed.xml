@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]" parallel="tests">
-  <test thread-count="5" name="ChromeTest(failed)" parallel="tests">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]" parallel="tests">
+  <test thread-count="2" name="ChromeTest(failed)" parallel="tests">
     <parameter name="browsername" value="chrome"/>
     <classes>
       <class name="smp.Test">
@@ -12,4 +12,15 @@
       </class> <!-- smp.Test -->
     </classes>
   </test> <!-- ChromeTest(failed) -->
+  <test thread-count="2" name="FirefoxTest(failed)" parallel="tests">
+    <parameter name="browsername" value="Firefox"/>
+    <classes>
+      <class name="smp.Test">
+        <methods>
+          <include name="test"/>
+          <include name="openurl"/>
+        </methods>
+      </class> <!-- smp.Test -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

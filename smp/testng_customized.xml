@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite1" >
 
-<suite name="Default suite" parallel = "tests" thread-count="2">
-
+  
+  
     <test name="ChromeTest">
     <parameter name="browsername" value="chrome" />
     <classes>
     <class name="smp.Test"/>
     </classes>
+    
     </test>
     
     
-    <test name="FirefoxTest">
+    <test name="Firefoxtest">
     <parameter name="browsername" value="Firefox" />
     <classes>
     <class name="smp.Test"/>
     </classes>
     
     
-    
-</test> <!-- Default test -->
-</suite> <!-- Default suite -->
+  </test> <!-- Test1 -->
+</suite> <!-- Suite1 -->
