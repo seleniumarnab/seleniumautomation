@@ -8,7 +8,7 @@ public class RetryAnalyzer implements IRetryAnalyzer {
 	
 	//update from office
 	int count = 0;
-	int limit = 11;
+	int limit = 3;
 
 	public boolean retry(ITestResult result) {
 
