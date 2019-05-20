@@ -1,26 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]" parallel="tests">
-  <test thread-count="2" name="ChromeTest(failed)" parallel="tests">
-    <parameter name="browsername" value="chrome"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="smp.Test">
+      <class name="smp.Test_1">
         <methods>
-          <include name="test"/>
-          <include name="openurl"/>
+          <include name="f"/>
+          <include name="beforeTest"/>
         </methods>
-      </class> <!-- smp.Test -->
+      </class> <!-- smp.Test_1 -->
     </classes>
-  </test> <!-- ChromeTest(failed) -->
-  <test thread-count="2" name="FirefoxTest(failed)" parallel="tests">
-    <parameter name="browsername" value="Firefox"/>
-    <classes>
-      <class name="smp.Test">
-        <methods>
-          <include name="test"/>
-          <include name="openurl"/>
-        </methods>
-      </class> <!-- smp.Test -->
-    </classes>
-  </test> <!-- FirefoxTest(failed) -->
+  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
