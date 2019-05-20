@@ -7,18 +7,9 @@
     <test name="ChromeTest">
     <parameter name="browsername" value="chrome" />
     <classes>
-    <class name="smp.Test"/>
+    <class name="smp.Test_1"/>
     </classes>
-    
-    </test>
-    
-    
-    <test name="Firefoxtest">
-    <parameter name="browsername" value="Firefox" />
-    <classes>
-    <class name="smp.Test"/>
-    </classes>
-    
+
     
   </test> <!-- Test1 -->
 </suite> <!-- Suite1 -->

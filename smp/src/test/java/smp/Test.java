@@ -28,7 +28,7 @@ public class Test {
 	
 	public void test() {
 		
-		//driver.get("https://www.google.co.in/");
+		//driver.sw
 		
 	}
 	
