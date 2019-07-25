@@ -17,6 +17,8 @@ public class Test {
 	
 	@BeforeTest
 	@Parameters("browsername")
+	
+	//test
 	public  void openurl(String browsername) {
 		
 		obj=new ParallelBrowsing();
