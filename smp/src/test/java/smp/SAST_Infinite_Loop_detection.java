@@ -13,12 +13,12 @@ public class SAST_Infinite_Loop_detection {
 		  { System.out.println("infinite");
 		  
 		  }
-		 
+	}
 		  
-		for (int i=1;i<=3;i++) {
+}	/*for (int i=1;i<=3;i++) {
 			
 			System.out.println("Bug fix");
 		}
-	}
+	}*/
 
-}
+
